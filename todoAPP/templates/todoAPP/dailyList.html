@@ -1,0 +1,11 @@
+{% if dailyList %}
+<ul>
+    {% for th in dailyList %}
+    <li><a href="/justdoit/{{th.id}}/">{{th.title}}</a></li>
+    {% endfor%}
+</ul>
+
+{%else%}
+<p>할일이 없습니다.</p>
+
+{% endif %}
